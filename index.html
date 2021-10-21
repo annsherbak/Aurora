@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <header class="header">
+        <div class="wrapper__full">
+            <div class="header__menu">
+                <div class="header__logo">
+                    <a href="#!">
+                        <img src="svg/header__logo.svg" alt="header__logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="#!">Биржа</a>
+                        </li>
+                        <li>
+                            <a href="#!">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#!">Отчёт</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <button class="header__button">
+                    Вход
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="wrapper__intro">
+                <div class="intro">
+                    <div class="intro__pic">
+                        <img src="img/intro-pic.png" alt="intro__pic">
+                    </div>
+                    <div class="intro__desc">
+                        <img src="svg/intro__pic-aurora.svg" alt="intro__pic-aurora" class="intro__desc-name">
+                        <h2 class="intro__desc-title">
+                            Маржинальная торговля криптовалютами на UTEX
+                        </h2>
+                        <div class="intro__desc-text">
+                            <ul>
+                                <li>Плечо x30 на ваш капитал</li>
+                                <li>Доступна торговля в шорт</li>
+                                <li>20 самых надежных криптовалют</li>
+                                <li>Настройка терминала под ваш опыт и торговую стратегию</li>
+                            </ul>
+                        </div>
+                        <div class="intro__desc-dowlound">
+                            <button>Скачать Аврору бесплатно</button>
+                            <p>Версия 10.1 для Windows</p>
+                        </div>
+                        <button class="intro__desc-btn" id="scroll__down"></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="line-bg">
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="rate">
+                    <h3 class="title rate__title">Тариф</h3>
+                    <div class="rate__cards">
+                        <div class="rate__card">
+                            <h4 class="rate__card-title">
+                                Плечо
+                            </h4>
+                            <p class="rate__card-info">30x</p>
+                            <p class="rate__card-text">Используйте для торговли в 30 раз больше денег, чем есть на счете
+                            </p>
+                        </div>
+
+                        <div class="rate__card">
+                            <h4 class="rate__card-title">
+                                Комиссия UTEX
+                            </h4>
+                            <p class="rate__card-info">0,2%</p>
+                            <p class="rate__card-text">Взимается биржей от суммы каждой сделки</p>
+                        </div>
+
+                        <div class="rate__card">
+                            <h4 class="rate__card-title">
+                                Комиссия овернайт
+                            </h4>
+                            <p class="rate__card-info">0,11%</p>
+                            <p class="rate__card-text">Взимается ежедневно в 03:00 МСК от суммы открытых позиций</p>
+                        </div>
+                    </div>
+                    <p class="rate__info">
+                        Если вы профессионал и хотите персональные условия, <a href="#!">напишите нам</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="line-bg">
+        </section>
+        <section>
+            <div class="wrapper__full">
+                <div class="screen">
+                    <h2 class="title screen__title">
+                        Для любого экрана
+                    </h2>
+                    <p class="screen__info">
+                        Аврора подходит для любого размера экрана: от ноутбука до многоэкранной рабочей станции
+                        трейдера. Есть готовые раскладки для популярных размеров. Также вы можете настроить расположение
+                        окон так, как удобно именно вам.
+                    </p>
+                    <img class="screen__img-bg" src="img/screen__img-bg.png" alt="screen__img">
+                    <img class="screen__img-first" src="img/screen__img-first.png" alt="screen__img">
+                </div>
+            </div>
+            <hr class="line-bg">
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="risk">
+                    <div class="risk__info">
+                        <h2 class="title risk__info-title">
+                            Встроенный <br> риск-менеджмент
+                        </h2>
+                        <p class="risk__info-text">
+                            Профессиональный риск-менеджер и система autoclose позволит сократить ваши риски и сделает
+                            торговлю более эффективной. Услуга доступна всем пользователям.
+                        </p>
+                    </div>
+                    <div class="risk__tabs">
+                        <div class="risk__tabs-items">
+                            <a href="#tab-1" class="risk__tabs-item risk__tabs-item--active">С контролем рисков <p>Результат: +100 $</p></a>
+                            <a href="#tab-2" class="risk__tabs-item">Без контроля рисков <p>Результат: -20 $</p></a>
+                        </div>
+                        <p class="risk__сomment">
+                            На графике показана прибыль и убытки по дням. С контролем рисков потери уменьшаются, за счет
+                            этого общая прибыльность растет.
+                        </p>
+                        <div class="risk__tabs-body">
+                            <div id="tab-1" class="risk__tabs-block risk__tabs-block--active">
+                                <picture>
+                                    <source srcset="img/risk__tab-pic--mobil.jpg" media="(max-width: 475px)">
+                                    <img src="img/risk__tab-pic.jpg" alt="tab-pic">
+                                </picture>
+                            </div>
+                            <div id="tab-2" class="risk__tabs-block">
+                                <picture>
+                                    <source srcset="img/risk__tab-pic-02--mobil.jpg" media="(max-width: 475px)"> 
+                                    <img src="img/risk__tab-pic-02.jpg" alt="tab-pic-02">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="line-sm">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="charts">
+                    <div class="charts__info">
+                        <h2 class="title charts__info-title">
+                            Прокачанные окна графиков
+                        </h2>
+                        <ul class="charts__info-list">
+                            <li>Открывайте сколько угодно графиков</li>
+                            <li>Заключайте сделки прямо с них</li>
+                            <li>Выбирайте таймфрейм и тип графика</li>
+                            <li>Добавляйте индикаторы</li>
+                            <li>Рисуйте линии. Пробуйте.</li>
+                        </ul>
+                    </div>
+                    <img src="./img/charts__pic.jpg" alt="charts__pic">
+                </div>
+                <hr class="line-sm">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="band">
+                    <img class="band__pic" src="./img/band__pic.jpg" alt="band__pic">
+                    <div class="band__info">
+                        <h2 class="title band__info-title">
+                            Стакан и лента
+                        </h2>
+                        <p class="band__info-text">
+                            Гибкие настройки отображения стакана: горизонтально, вертикально, с цветами или без. Подойдет для трейдеров с опытом на рынках акций, фьючерсов и криптобиржах.
+                        </p>
+                    </div>
+                </div>
+                <hr class="line-sm">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="application">
+                    <div class="application__info">
+                        <h2 class="title application__info-title">
+                            Окно позиций и заявок
+                        </h2>
+                        <p class="application__info-text">
+                            Все ваши позиции и заявки всегда перед глазами — ничего не забудете. А кнопки быстрого закрытия заявок помогут реагировать мгновенно.
+                        </p>
+                    </div>
+                    <img class="application__pic" src="./img/application__pic.jpg" alt="application__pic">
+                </div>
+                <hr class="line-sm">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="alert">
+                    <div class="alert__info">
+                        <h2 class="title alert__info-title">
+                            Алерты
+                        </h2>
+                        <p class="alert__info-text">
+                            Детальная настройка оповещений о событиях рынка
+                        </p>
+                        <div class="alert__info-scrin">
+                            <img src="./img/alert__info-pic.jpg" alt="alert__info-pic">
+                            <img src="./img/alert__info-pic-2.jpg" alt="alert__info-pic-2">
+                        </div>
+                    </div>
+                    <img class="alert__pic" src="./img/alert__pic.jpg" alt="alert__pic">
+                </div>
+                <hr class="line-sm">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="theme">
+                        <h2 class="title theme__title">
+                            Темная и светлая тема
+                        </h2>
+                    <div class="theme__tabs">
+                        <nav class="theme__tabs-items">
+                            <a class="theme__tabs-item theme__tabs-item--active" href="#tab-03">Темная</a>
+                            <a class="theme__tabs-item" href="#tab-04">Светлая</a>
+                        </nav>
+                        <div class="theme__tabs-body">
+                            <div class="theme__tabs-block theme__tabs-block--active" id="tab-03">
+                                <img src="img/theme__tab-pic.jpg" alt="tab-pic.jpg">
+                            </div>
+                            <div class="theme__tabs-block" id="tab-04">
+                                <img src="img/theme__tab-pic-2.jpg" alt="ab-pic-02">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="line-sm">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="watchlist">
+                    <div class="watchlist__pic">
+                        <img src="./img/watchlist__pic.jpg" alt="watchlist__pic">
+                        <img src="./img/watchlist__pic-2.jpg" alt="watchlist__pic-2">
+                    </div>
+                    <div class="watchlist__info">
+                        <h2 class="title watchlist__info-title">
+                            Вотчлист с тонкой настройкой
+                        </h2>
+                        <p class="watchlist__info-text">
+                            Добавляйте тикеры в список отслеживания, чтобы не пропустить изменений по ним. Включайте нужные колонки по более чем 20 параметрам. При клике на тикер все остальные окна переключатся на него.
+                        </p>
+                    </div>
+                </div>
+                <hr class="line-sm">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="hotkeys">
+                    <div class="hotkeys__info">
+                        <h2 class="title hotkeys__info-title">
+                            Горячие клавиши
+                        </h2>
+                        <p class="hotkeys__info-text">
+                            Все частые дейтствия можно выполнять с клавиатуры. Настройте всё до мелочей под себя, чтобы торговать виртуозно.
+                        </p>
+                    </div>
+                    <img class="hotkeys__pic" src="./img/hotkeys__pic.jpg" alt="hotkeys__pic">
+                </div>
+                <hr class="line-sm">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="instruction">
+                    <div class="instruction__chief">
+                        <h2 class="title instruction__chief-title">
+                            С чего начать
+                        </h2>
+                        <div class="instruction__chief-download">
+                            <button class="instruction__chief-btn">
+                                Скачать Аврору бесплатно
+                               </button>
+                               <p class="instruction__chief-info">
+                                Версия 10.1 для Windows
+                               </p>
+                        </div>
+                    </div>
+                    <ul class="instruction__desc">
+                        <li>Скачайте и установите Аврору</li>
+                        <li>Чтобы начать торговать, пополните её счет переводом с основного счета UT <a href="#!">в разделе счетов</a></li>
+                        <li>После этого у вас появится Buying Power — покупательная способность (баланс × плечо) — сумма, на которую вы можете совершать сделки</li>
+                        <li>В 3 часа утра (МСК) следующего дня проходит клиринг: пересчитывается ваш Buying Power и прибыль, формируется <a href="#!">отчет о торговле,</a> который вы сможете проанализировать.</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="line-footer">
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper__footer">
+            <div class="footer">
+                <div class="footer__sm">
+                    <a href="#!">Telegram</a>
+                    <a href="#!">YouTube</a>
+                    <a href="#!">UT Media</a>
+                </div>
+                <div class="footer__nav">
+                    <nav class="footer__nav-1">
+                        <ul>
+                            <li><a href="#!">Партнёрская программа</a></li>
+                            <li><a href="#!">UT Инвестиции</a></li>
+                            <li><a href="#!"> Аврора</a></li>  
+                        </ul>
+                    </nav>
+                    <nav class="footer__nav-2">
+                        <ul>
+                            <li><a href="#!">Политика конфиденциальности</a></li>
+                            <li><a href="#!">AML Политика</a></li>
+                            <li><a href="#!"> Ведомость рисков</a></li>  
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__bi">
+                    <img src="./svg/footer__visa.svg" alt="">
+                    <img src="./svg/footer__mastercard.svg" alt="">
+                    <p>Bank card payments processed by merchant UT Exchange OÜ. Harju maakond, Tallinn, Lasnamäe linnaosa, Peterburi tee 47, 11415</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</div>
+</body>
+
+</html>
